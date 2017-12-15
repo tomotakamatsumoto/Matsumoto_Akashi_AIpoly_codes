@@ -1,0 +1,109 @@
+
+v3
+    01  raw
+    02  cut error check in getPosNthChar
+        314
+    02b
+        309
+    02c
+        304
+    02d
+        300 
+    02e
+        
+    02e_rel
+        298
+
+okay - fsim_v0 reset prerungen from 5000 -> 500
+    this probably accounts for the time diff
+    test this notion tomorrow - run 27_ave_etn_v3_02e_rel with prerungen = 500
+
+basecount tracking Error	
+	problem in doMutation
+	error occurs when recombination is disabled
+	
+	$$ numHits01 loop
+!!!  processing basect changes !!!
+numHits01 > 0
+	errors seem to come after mutation incorporation
+	next codpos = 1 after mutation
+
+
+// 		seq_dat[curSeq].tot_1_ct = 0;
+// 		for (curCodPos=1; curCodPos<=3; curCodPos++)
+// 			seq_dat[curSeq].tot_1_ct += seq_dat[curSeq].baseCount1[curCodPos];
+
+-------------------------------------
+-------------------------------------
+MAXSEQLEN		userPrefp->seqLen
+MAXSEQNUM		userPrefp->initSeqNum
+
+	codPos  : 2
+	hitCod  : 56
+	origSite: 0
+	curSite: 416
+getPosNthChar
+	site: -start-011101011111001011001110010011011011011000001011110111100111101110011000000011010001111000100010101011100010010000110011011010111010000000001111001110111010111110000110100011111110010111000101100111011000111110110100111110110000100011111111011101001100011111101010011101001111001000100001111001011011111000110100111000011101101011010110001100011111001011110011111000010100100100010011100101110111110110101100011111111010010111100110100011101001000110000101111010110101101001110001111010101011101111011100111101101000111111111001100111001111100011110110011010001000000100001110101111101001100111110110101001101111101011010001000100111010111100111111111001111001101011010100101010111011000100010011110110001100110011110111000011011011111110101110110010101011000000100011111100010001100111110110100111001100110010111111110111010101111111010011101001011100001100001101011101101100111110011001010110010110101111011111111110011001101101111000001101001111000001101100110011101100111011010110011011110000111110111011110010110111100011110001111111011000110100111101101011000110011101111111111011101001101010110001111111101011111001111111111110101111001100100110001110100001101110111100111000010101000001110010-end-
+	codPos  : 1
+	hitCod  : 230
+	origSite: 1
+looking for 230th 1
+0101000100000000111111000000101010100010001000010110110110110101110011111110101101010110010100101000101110011001010100101001110011111111011001111010010110111010101011011110111011011011000001011110111110111000011011111010100110100100110110110000111110100010110011111101101111011100100101010111110001011101110011100101001110111001001011101011101011001111100101111010101011101011111101110110111110010010found 229 1
+
+Error! Something wrong with baseCounts. cursite>seqlen. Check Code
+
+
+make sure all '0', '1' are okay (don't treat char as int)
+	seq_dat[curSeq].site[curSite]
+	siteData[curSite].ancSite
+
+
+-------------------------------------
+-------------------------------------
+variables/functions to check
+
+
+sequence information:
+struct seq_str
+{
+	char site[MAXSEQLEN+1];					/*string of bases for each sequence*/
+	long baseCount0[3+1];			/*baseCount0[j] is the number of 0s at sitePos where (sitePos+2)%3+1=j*/
+	long baseCount1[3+1];			/*baseCount1[j] is the number of 1s at sitePos where (sitePos+2)%3+1=j*/
+	long tot_1_ct;
+};
+
+tot_1_ct = baseCount1[1] + baseCount1[2] + baseCount1[3];
+
+fitness info
+
+sArray[]
+
+wData[curSeq]
+
+sampleSval();
+
+sArray[curSite]=sampleSval(curSite, 0);
+
+double w_dat_static[MAXSEQLEN+1];
+
+fitness of a given sequence is:
+w_dat_static[seq_dat[curSeq].tot_1_ct]
+
+
+	Getting Replicate Information
+	Writing Replicate information to file
+	Replicate 172 done in 1s
+Replicate 173 of 1000
+	PreRun for 500 generations
+	Generation 500 of 500 done
+	RepRun for 1000 generations
+	Generation 500 of 1000 done
+	Generation 1000 of 1000 done
+	Getting Replicate Information
+	Writing Replicate information to file
+	Replicate 173 done in 1s
+Replicate 174 of 1000
+	PreRun for 500 generations
+	Generation 500 of 500 done
+
+

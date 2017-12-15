@@ -1,0 +1,84 @@
+T21X_Af_expr_table_codon_pref_tests
+v5
+r1
+cCheck dependencies
+cCompileC zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests normal x86_64
+cGenerateDSYMFile /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests.dSYM /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests
+
+N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/Userpref.h
+c0000000050A6FBA40000000000003270
+t1353120676
+s12912
+
+N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/header1.h
+c0000000050AC1967000000000000E4DC
+t1353455975
+s58588
+
+N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/header2.h
+c0000000050AC8EFB0000000000006F43
+t1353486075
+s28483
+
+N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/main.c
+c0000000050AC8F2F000000000000E0FF
+t1353486127
+s57599
+
+N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/21X_Af_expr_table_codon_pref_tests.LinkFileList
+c0000000050AB3A3100000000000000AC
+t1353398833
+s172
+
+N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests
+t1353486085
+s69384
+
+N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests.dSYM
+t1353486085
+s102
+
+CBuild AST from /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/main.c
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesad1492afc65cb641^575a92afc65cb641^---0#1#0#--18"Check dependencies36"9F92CB69-D7D5-40DB-8EB3-FF3617BB276F-
+
+CCompileC zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s375178927.573493
+e375178928.071807
+r1
+xCompileC
+xzzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o
+x/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/main.c0f9893afc65cb641^6f6412b0c65cb641^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/main.c0000000000000000^2924"CompileC zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wno-parentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -fasm-blocks -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -iquote /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/21X_Af_expr_table_codon_pref_tests-generated-files.hmap -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/21X_Af_expr_table_codon_pref_tests-own-target-headers.hmap -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/21X_Af_expr_table_codon_pref_tests-all-target-headers.hmap -iquote /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/21X_Af_expr_table_codon_pref_tests-project-headers.hmap -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/include -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/DerivedSources/x86_64 -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/DerivedSources -F/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release -MMD -MT dependencies -MF /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.dia -c /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/main.c -o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o36"37F69D55-B6BF-4C78-91EE-11FDF28A9350-
+
+CGenerateDSYMFile /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests.dSYM /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests
+s375178928.105332
+e375178928.117981
+r1
+xGenerateDSYMFile
+x/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests.dSYM
+x/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"Generating /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests.dSYM47041bb0c65cb641^2a361eb0c65cb641^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests.dSYM/0000000000000000^517"GenerateDSYMFile zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests.dSYM zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests    cd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program    /Applications/Xcode.app/Contents/Developer/usr/bin/dsymutil /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests -o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests.dSYM36"86D67E7B-E6A5-4760-9915-037D59105BC6-
+
+CLd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests normal x86_64
+s375178928.079789
+e375178928.098103
+r1
+xLd
+x/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Link /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_testsfe7b14b0c65cb641^001e19b0c65cb641^---0#0#0#--833"Ld zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests normal x86_64    cd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -L/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release -F/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release -filelist /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Intermediates/fsim_v2.build/Release/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/21X_Af_expr_table_codon_pref_tests.LinkFileList -mmacosx-version-min=10.7 -o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_v3/00.program/zzz_Build/Products/Release/21X_Af_expr_table_codon_pref_tests36"B8870C09-B798-4303-A196-F44AB2B230E4-
+
