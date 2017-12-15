@@ -1,127 +1,0 @@
-T21X_Af_expr_table_codon_pref_tests
-v5
-r1
-cCheck dependencies
-cCompileC zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Products/Debug/27_ave_etn normal x86_64
-
-N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/Userpref.h
-c0000000050A6FBA40000000000003270
-t1353120676
-s12912
-
-N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/header1.h
-c0000000050A9D69F000000000000E4AA
-t1353307807
-s58538
-
-N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/header2.h
-c0000000050A9D1530000000000006534
-t1353306451
-s25908
-
-N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c
-c0000000050A9D956000000000000D609
-t1353308502
-s54793
-
-N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/27_ave_etn.LinkFileList
-c0000000050A08B5D00000000000000A6
-t1352698717
-s166
-
-N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o
-t1353308500
-s160748
-
-N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Products/Debug/27_ave_etn
-t1353308500
-s68968
-
-N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/main.c
-c00000000000000000000000000000000
-t2
-s0
-
-N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/27_ave_etn.LinkFileList
-c0000000050A0606D000000000000009B
-t1352687725
-s155
-
-N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o
-t1352689725
-s83184
-
-N/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Products/Debug/27_ave_etn
-t1352689725
-s42548
-
-CBuild AST from /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c
-r0
-
-CBuild AST from /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/main.c
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies009047da105ab641^57ec47da105ab641^---0#1#0#--18"Check dependencies36"838BF800-1C78-46AD-8554-AE1EE99E28C0-
-
-CCompileC zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
-s375001306.283014
-e375001307.418942
-r1
-xCompileC
-xzzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o
-x/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c
-xnormal
-xx86_64
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c:241:7: warning: unused variable 'i' [-Wunused-variable]
-o        long i, ct1_pos1, ct1_pos2, ct1_pos3;
-o             ^
-o/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c:241:10: warning: unused variable 'ct1_pos1' [-Wunused-variable]
-o        long i, ct1_pos1, ct1_pos2, ct1_pos3;
-o                ^
-o/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c:241:20: warning: unused variable 'ct1_pos2' [-Wunused-variable]
-o        long i, ct1_pos1, ct1_pos2, ct1_pos3;
-o                          ^
-o/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c:241:30: warning: unused variable 'ct1_pos3' [-Wunused-variable]
-o        long i, ct1_pos1, ct1_pos2, ct1_pos3;
-o                                    ^
-o4 warnings generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c06a148da105ab641^3e406bdb105ab641^-801"/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c:241:7: warning: unused variable 'i' [-Wunused-variable]        long i, ct1_pos1, ct1_pos2, ct1_pos3;             ^/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c:241:10: warning: unused variable 'ct1_pos1' [-Wunused-variable]        long i, ct1_pos1, ct1_pos2, ct1_pos3;                ^/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c:241:20: warning: unused variable 'ct1_pos2' [-Wunused-variable]        long i, ct1_pos1, ct1_pos2, ct1_pos3;                          ^/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c:241:30: warning: unused variable 'ct1_pos3' [-Wunused-variable]        long i, ct1_pos1, ct1_pos2, ct1_pos3;                                    ^4 warnings generated.4(36%IDEClangDiagnosticActivityLogMessage2@19"Unused variable 'i'-375001307#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@77"file://localhost/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c0000000000000000^240#6#240#6#7493#0#19"Unused Entity Issue--2@26"Unused variable 'ct1_pos1'-375001307#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@77"file://localhost/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c0000000000000000^240#9#240#9#7496#0#19"Unused Entity Issue--2@26"Unused variable 'ct1_pos2'-375001307#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@77"file://localhost/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c0000000000000000^240#19#240#19#7506#0#19"Unused Entity Issue--2@26"Unused variable 'ct1_pos3'-375001307#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@77"file://localhost/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c0000000000000000^240#29#240#29#7516#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@77"file://localhost/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c0000000000000000^2758"CompileC zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -fasm-blocks -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -iquote /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/27_ave_etn-generated-files.hmap -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/27_ave_etn-own-target-headers.hmap -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/27_ave_etn-all-target-headers.hmap -iquote /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/27_ave_etn-project-headers.hmap -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Products/Debug/include -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/DerivedSources/x86_64 -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/DerivedSources -F/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Products/Debug -MMD -MT dependencies -MF /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.dia -c /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/main.c -o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o36"E34F0DB0-7E5F-44B8-B8D6-8F29C22FE9DB-
-
-CCompileC zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
-s374388461.381914
-e374388461.633725
-r1
-xCompileC
-xzzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o
-x/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/main.c
-xnormal
-xx86_64
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/main.cbeda61edb650b641^bc3ba2edb650b641^---0#0#0#-19%DVTDocumentLocation2@66"file://localhost/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/main.c0000000000000000^2615"CompileC zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -fasm-blocks -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -iquote /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/27_ave_etn-generated-files.hmap -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/27_ave_etn-own-target-headers.hmap -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/27_ave_etn-all-target-headers.hmap -iquote /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/27_ave_etn-project-headers.hmap -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Products/Debug/include -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/DerivedSources/x86_64 -I/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/DerivedSources -F/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Products/Debug -MMD -MT dependencies -MF /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.dia -c /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/main.c -o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/main.o36"B2A4043F-2DF5-42AC-AE93-682B24B7326E-
-
-CLd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Products/Debug/27_ave_etn normal x86_64
-s375001307.426063
-e375001307.462183
-r1
-xLd
-x/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Products/Debug/27_ave_etn
-xnormal
-xx86_64
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Link /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Products/Debug/27_ave_etn8c306ddb105ab641^4a5d76db105ab641^---0#0#0#--743"Ld zzz_Build/Products/Debug/27_ave_etn normal x86_64    cd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -L/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Products/Debug -F/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Products/Debug -filelist /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/27_ave_etn.LinkFileList -mmacosx-version-min=10.7 -o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/00.program/zzz_Build/Products/Debug/27_ave_etn36"E2B06295-0874-4D1D-B820-4C3B2B59CD4E-
-
-CLd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Products/Debug/27_ave_etn normal x86_64
-s374388461.641160
-e374388461.658728
-r1
-xLd
-x/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Products/Debug/27_ave_etn
-xnormal
-xx86_64
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Link /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Products/Debug/27_ave_etn0132a4edb650b641^40a3a8edb650b641^---0#0#0#--688"Ld zzz_Build/Products/Debug/27_ave_etn normal x86_64    cd /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -L/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Products/Debug -F/Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Products/Debug -filelist /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Intermediates/fsim.build/Debug/21X_Af_expr_table_codon_pref_tests.build/Objects-normal/x86_64/27_ave_etn.LinkFileList -mmacosx-version-min=10.7 -o /Volumes/HA50/HA_coding/05_fsim/fsim_hiro_a/zzz_Build/Products/Debug/27_ave_etn36"90B3384C-C728-4032-B47B-5DA01EF7B0D0-
-
