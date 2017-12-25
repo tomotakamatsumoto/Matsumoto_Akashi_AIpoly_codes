@@ -31,12 +31,11 @@ for ($n1=1;$n1<=$sample_num;$n1++) {
     @freq_spec_GA[$n1]=0;
 }
 
-$n=0;
+
 $poly=0;
 $poly2=0;
 for ($n=0;$n<=$#SEQ1;$n++) {
     $site = $n;
-    
     $check3=0;
     
     $n2 = 1;
@@ -60,7 +59,6 @@ for ($n=0;$n<=$#SEQ1;$n++) {
         $poly++;
     }
 
-    
     while (@str1[$n] =~ /(\w)\t(0\.\d+)/g) {
         $check1=0;
         $check2=0;
@@ -278,7 +276,6 @@ for ($n=0;$n<=$#SEQ1;$n++) {
             }
         }
     }
-    $n++;
 }
 
 open (OUT1, ">>estimated_frequency_spectrum.txt");

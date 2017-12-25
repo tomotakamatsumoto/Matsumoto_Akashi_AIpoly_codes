@@ -10,11 +10,15 @@ open (IN4,"estimated_frequency_spectrum.txt");
 
 # read integers : total number of sequences (collapse seqs + outgroups), number of alleles in the focused species, number of internal nodes in the phylogeny, order of the target node to which the ancestral state is inferred
 $total_seq_num = $ARGV[0];
-$sample_num = $ARGV[1];
-$num_internal_nodes = $ARGV[2];
-$target_node = $ARGV[3];
+$num_internal_nodes = $ARGV[1];
+$target_node = $ARGV[2];
+$sample_start = $ARGV[4];
+$sample_end = $ARGV[5];
 
-$mutation_category_num = $ARGV[4];
+$sample_num = $sample_end - $sample_start + 1;
+
+
+$mutation_category_num = $ARGV[3];
 
 @TC = split /\t/, @str4[0];
 @TA = split /\t/, @str4[1];
@@ -29,130 +33,78 @@ $mutation_category_num = $ARGV[4];
 @GC = split /\t/, @str4[10];
 @GA = split /\t/, @str4[11];
 
+$num_TC=0;
+$num_TA=0;
+$num_TG=0;
+$num_CT=0;
+$num_CA=0;
+$num_CG=0;
+$num_AT=0;
+$num_AC=0;
+$num_AG=0;
+$num_GT=0;
+$num_GC=0;
+$num_GA=0;
+
 # sum the numbers of polymorphic mutations in one mutation category
 for ($n1=1;$n1<=$mutation_category_num;$n1++) {
     for ($n2=1;$n2<=$sample_num;$n2++) {
         @{'num_category'.$n1}[$n2] = 0;
     }
+    #$check_catenum=1;
+    #$cate_1 = $ARGV[6];
+    #for ($n3=7;$n3=17;$n++) {
+    #    if ($ARGV[$n3] !=
+    #}
     
-    #printf "enter the mutations in category $n1\n";
     
-    if ($n1 == 1) {
-        $stdin = "1";
+    $cate_check_TC = $ARGV[6];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[6]}[$n2] = @{'num_category'.$ARGV[6]}[$n2]+@TC[$n2];
     }
-    if ($n1 == 2) {
-        $stdin = "2";
+    $cate_check_TA = $ARGV[7];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[7]}[$n2] = @{'num_category'.$ARGV[7]}[$n2]+@TA[$n2];
     }
-    if ($n1 == 3) {
-        $stdin = "3";
+    $cate_check_TG = $ARGV[8];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[8]}[$n2] = @{'num_category'.$ARGV[8]}[$n2]+@TG[$n2];
     }
-    if ($n1 == 4) {
-        $stdin = "4";
+    $cate_check_CT = $ARGV[9];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[9]}[$n2] = @{'num_category'.$ARGV[9]}[$n2]+@CT[$n2];
     }
-    if ($n1 == 5) {
-        $stdin = "5";
+    $cate_check_CA = $ARGV[10];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[10]}[$n2] = @{'num_category'.$ARGV[10]}[$n2]+@CA[$n2];
     }
-    if ($n1 == 6) {
-        $stdin = "6";
+    $cate_check_CG = $ARGV[11];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[11]}[$n2] = @{'num_category'.$ARGV[11]}[$n2]+@CG[$n2];
     }
-    if ($n1 == 7) {
-        $stdin = "7";
+    $cate_check_AT = $ARGV[12];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[12]}[$n2] = @{'num_category'.$ARGV[12]}[$n2]+@AT[$n2];
     }
-    if ($n1 == 8) {
-        $stdin = "8";
+    $cate_check_AC = $ARGV[13];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[13]}[$n2] = @{'num_category'.$ARGV[13]}[$n2]+@AC[$n2];
     }
-    if ($n1 == 9) {
-        $stdin = "9";
+    $cate_check_AG = $ARGV[14];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[14]}[$n2] = @{'num_category'.$ARGV[14]}[$n2]+@AG[$n2];
     }
-    if ($n1 == 10) {
-        $stdin = "10";
+    $cate_check_GT = $ARGV[15];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[15]}[$n2] = @{'num_category'.$ARGV[15]}[$n2]+@GT[$n2];
     }
-    if ($n1 == 11) {
-        $stdin = "11";
+    $cate_check_GC = $ARGV[16];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[16]}[$n2] = @{'num_category'.$ARGV[16]}[$n2]+@GC[$n2];
     }
-    if ($n1 == 12) {
-        $stdin = "12";
-    }
-    
-    #$stdin = <STDIN>;
-    @stdin = split /\s/, $stdin;
-    
-    foreach $_ (@stdin) {
-
-        if ($_ =~ /(\d+)/) {
-            if ($1 == 1) {
-                $cate_check_TC = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@TC[$n2];
-                }
-            }
-            if ($1 == 2) {
-                $cate_check_TA = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@TA[$n2];
-                }
-            }
-            if ($1 == 3) {
-                $cate_check_TG = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@TG[$n2];
-                }
-            }
-            if ($1 == 4) {
-                $cate_check_CT = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@CT[$n2];
-                }
-            }
-            if ($1 == 5) {
-                $cate_check_CA = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@CA[$n2];
-                }
-            }
-            if ($1 == 6) {
-                $cate_check_CG = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@CG[$n2];
-                }
-            }
-            if ($1 == 7) {
-                $cate_check_AT = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@AT[$n2];
-                }
-            }
-            if ($1 == 8) {
-                $cate_check_AC = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@AC[$n2];
-                }
-            }
-            if ($1 == 9) {
-                $cate_check_AG = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@AG[$n2];
-                }
-            }
-            if ($1 == 10) {
-                $cate_check_GT = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@GT[$n2];
-                }
-            }
-            if ($1 == 11) {
-                $cate_check_GC = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@GC[$n2];
-                }
-            }
-            if ($1 == 12) {
-                $cate_check_GA = $n1;
-                for ($n2=1;$n2<=$sample_num-1;$n2++) {
-                    @{'num_category'.$n1}[$n2] = @{'num_category'.$n1}[$n2]+@GA[$n2];
-                }
-            }
-        }
+    $cate_check_GA = $ARGV[17];
+    for ($n2=1;$n2<=$sample_num-1;$n2++) {
+        @{'num_category'.$ARGV[17]}[$n2] = @{'num_category'.$ARGV[17]}[$n2]+@GA[$n2];
     }
 }
 
@@ -201,10 +153,11 @@ for ($n1=1;$n1<=$total_seq_num;$n1++) {
     @{'SEQ'.$n1} = split //, ${'SEQ'.$n1};
 }
 
+$n2 = $sample_start-1;
 for ($n1=1;$n1<=$sample_num;$n1++) {
-    $n2 = $n1-1;
     ${'mSEQ'.$n1} = @str3[2*$n2+1];
     @{'mSEQ'.$n1} = split //, ${'mSEQ'.$n1};
+    $n2++;
 }
 
 
@@ -227,7 +180,7 @@ for ($n=0;$n<=$#SEQ1-1;$n++) {
     $ref1 = @mSEQ1[$site];
     $nref1 = 1;
     for ($n2=2;$n2<=$sample_num;$n2++) {
-
+        
         if (@{'mSEQ'.$n2}[$site] eq $ref1) {
             $nref1++;
         }
@@ -252,12 +205,13 @@ for ($n=0;$n<=$#SEQ1-1;$n++) {
         if ($_ =~ /(\d+)\s+$site_pattern:\s(\w+)/) {
             
             print (OUT1 "$n\t");
-
+            
             $num = $1;
             # find the inferred state at the target node
             $preref = $2;
             @preref = split //, $preref;
             $ref_m = @preref[$target_node-1];
+            $ref_ms = @preref[0];
             
             if ($ref_m eq $ref1) {
                 $freq = $freq_ref1;
@@ -271,8 +225,8 @@ for ($n=0;$n<=$#SEQ1-1;$n++) {
             # weight the probability using the expected SFS (calculate the total of the weighted probabilities)
             while ($_ =~ /(\w+)\s+\((\d\.\d+)\)/g) {
                 $preref = $1;
-
-
+                
+                
                 if ($preref ne "total") {
                     @preref = split //, $preref;
                     $ref_m = @preref[$target_node-1];
@@ -401,10 +355,13 @@ for ($n=0;$n<=$#SEQ1-1;$n++) {
                     }
                 }
             }
-
+            
             
             # weight the probability using the expected SFS (calculate the weighted probability of each ancestral state)
             if ($total_dp <= 1.00) {
+                #if ($total == 0) {
+                #printf "$site\t$ref_m\t$ref1\t$ref2\n";
+                #}
                 #print (OUT4 "$site_pattern\n");
                 while ($_ =~ /(\w+)\s+\((\d\.\d+)\)/g) {
                     $preref = $1;
@@ -535,28 +492,28 @@ for ($n=0;$n<=$#SEQ1-1;$n++) {
                     
                     print (OUT1 "$ref_m\t$X\t");
                     
-                    #if ($1 ne $ref_m) {
-                    #    if ($1 eq "T") {
-                    #        if ($3 eq "C") {$num_TC = $num_TC + $X;}
-                    #        if ($3 eq "A") {$num_TA = $num_TA + $X;}
-                    #        if ($3 eq "G") {$num_TG = $num_TG + $X;}
-                    #    }
-                    #    if ($1 eq "C") {
-                    #        if ($3 eq "T") {$num_CT = $num_CT + $X;}
-                    #        if ($3 eq "A") {$num_CA = $num_CA + $X;}
-                    #        if ($3 eq "G") {$num_CG = $num_CG + $X;}
-                    #    }
-                    #    if ($1 eq "A") {
-                    #        if ($3 eq "C") {$num_AC = $num_AC + $X;}
-                    #        if ($3 eq "T") {$num_AT = $num_AT + $X;}
-                    #        if ($3 eq "G") {$num_AG = $num_AG + $X;}
-                    #    }
-                    #    if ($1 eq "G") {
-                    #        if ($3 eq "C") {$num_GC = $num_GC + $X;}
-                    #        if ($3 eq "A") {$num_GA = $num_GA + $X;}
-                    #        if ($3 eq "T") {$num_GT = $num_GT + $X;}
-                    #    }
-                    #}
+                    if ($ref_ms ne $ref_m) {
+                        if ($ref_ms eq "T") {
+                            if ($ref_m eq "C") {$num_TC = $num_TC + $X;}
+                            if ($ref_m eq "A") {$num_TA = $num_TA + $X;}
+                            if ($ref_m eq "G") {$num_TG = $num_TG + $X;}
+                        }
+                        if ($ref_ms eq "C") {
+                            if ($ref_m eq "T") {$num_CT = $num_CT + $X;}
+                            if ($ref_m eq "A") {$num_CA = $num_CA + $X;}
+                            if ($ref_m eq "G") {$num_CG = $num_CG + $X;}
+                        }
+                        if ($ref_ms eq "A") {
+                            if ($ref_m eq "C") {$num_AC = $num_AC + $X;}
+                            if ($ref_m eq "T") {$num_AT = $num_AT + $X;}
+                            if ($ref_m eq "G") {$num_AG = $num_AG + $X;}
+                        }
+                        if ($ref_ms eq "G") {
+                            if ($ref_m eq "C") {$num_GC = $num_GC + $X;}
+                            if ($ref_m eq "A") {$num_GA = $num_GA + $X;}
+                            if ($ref_m eq "T") {$num_GT = $num_GT + $X;}
+                        }
+                    }
                 }
             }
             if ($total_dp > 1.00) {
@@ -565,7 +522,7 @@ for ($n=0;$n<=$#SEQ1-1;$n++) {
                 while ($_ =~ /(\w)(\w)(\w)(\w)\s+\((\d\.\d+)\)/g) {
                     
                     print (OUT1 "$ref_m\tnan\t");
-
+                    
                 }
             }
             
@@ -574,20 +531,8 @@ for ($n=0;$n<=$#SEQ1-1;$n++) {
     }
 }
 
-#$nnum_TC = $num_TC/($freqT+$freqA);
-#$nnum_TA = $num_TA/($freqT+$freqA);
-#$nnum_TG = $num_TG/($freqT+$freqA);
-#$nnum_CT = $num_CT/($freqC+$freqG);
-#$nnum_CA = $num_CA/($freqC+$freqG);
-#$nnum_CG = $num_CG/($freqC+$freqG);
-#$nnum_AT = $num_AT/($freqT+$freqA);
-#$nnum_AC = $num_AC/($freqT+$freqA);
-#$nnum_AG = $num_AG/($freqT+$freqA);
-#$nnum_GT = $num_GT/($freqC+$freqG);
-#$nnum_GC = $num_GC/($freqC+$freqG);
-#$nnum_GA = $num_GA/($freqC+$freqG);
 
-#open (OUT7, ">>AWP_substitution_for_post_weighted_collapse.txt");
-#print (OUT7 "TC\tTA\tTG\tCT\tCA\tCG\tAT\tAC\tAG\tGT\tGC\tGA\n");
-#print (OUT7 "$num_TC\t$num_TA\t$num_TG\t$num_CT\t$num_CA\t$num_CG\t$num_AT\t$num_AC\t$num_AG\t$num_GT\t$num_GC\t$num_GA\n");
-#close (OUT7);
+open (OUT7, ">>AWP_substitution_for_post_weighted_collapse.txt");
+print (OUT7 "TC\tTA\tTG\tCT\tCA\tCG\tAT\tAC\tAG\tGT\tGC\tGA\n");
+print (OUT7 "$num_TC\t$num_TA\t$num_TG\t$num_CT\t$num_CA\t$num_CG\t$num_AT\t$num_AC\t$num_AG\t$num_GT\t$num_GC\t$num_GA\n");
+close (OUT7);
