@@ -16,4 +16,4 @@ For the detail including the required input files, please check "memo.docx".
 
 "__make_collapse_seq_for_actual_data_analysis" and "__run_iterative_BTW_for_actual_data_analysis" contain codes for BTW analysis applicable to the actual data.
 We are still developing them.
-The codes will be applicable arbitrary number of species and polymorphic sequences, and iterative BTWest analysis will be done automatically.
+The codes will be applicable to arbitrary number of species and polymorphic sequences, and iterative BTWest analysis will be done automatically.
