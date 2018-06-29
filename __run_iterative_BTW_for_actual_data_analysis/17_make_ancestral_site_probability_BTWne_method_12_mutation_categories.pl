@@ -163,6 +163,7 @@ for ($n=0;$n<=$#SEQ1-1;$n++) {
                 if ($preref ne "total") {
                     @preref = split //, $preref;
                     $ref_m = @preref[$target_node-1];
+                    $ref_ms = @preref[0];
                     
                     if ($ref_m eq $ref1) {
                         if ($ref_m eq "A") {
@@ -300,6 +301,7 @@ for ($n=0;$n<=$#SEQ1-1;$n++) {
                     $preref = $1;
                     @preref = split //, $preref;
                     $ref_m = @preref[$target_node-1];
+                    $ref_ms = @preref[0];
                     
                     if ($ref_m eq $ref1) {
                         if ($ref_m eq "A") {
